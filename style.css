@@ -1,0 +1,127 @@
+body {
+  margin: 0 auto;
+  background-color: rgb(123, 201, 198);
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  text-shadow: 5px 5px 5px #294a18;
+  color: white;
+  font-size: 40px;
+  font-family: 'Shrikhand', cursive;
+  letter-spacing: 2px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  max-height: 450px;
+  max-width: 650px;
+}
+
+#nps-logo {
+  width: 80px;
+  height: 100px;
+  padding: 0 0 10px 0;
+}
+
+.slideshow-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mySlides {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  width: auto;
+  background-image: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.prev {
+  cursor: w-resize;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  cursor: e-resize;
+}
+
+.prev:hover, .next:hover {
+  background-color: #294a18;
+}
+
+.title {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 15px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  text-shadow: 5px 5px 5px #294a18;
+  font-family: 'Shrikhand', cursive;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 18px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-family: 'Port Lligat Sans', sans-serif;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c66c36;
+  border-radius: 50%;
+  display: inline-block;
+  transition:  0.6s ease;
+  position: relative;
+}
+
+.dots {
+  padding: 10px;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #294a18;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
